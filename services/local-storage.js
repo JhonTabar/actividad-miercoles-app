@@ -1,7 +1,8 @@
-function guardarLocalStorage(){
-    localStorage.setItem(llave,valor)
+export function guardarLocalStorage(llave,valor){
+    localStorage.setItem(llave, JSON.stringify(valor))
 }
 
-function consultarLocalStorage(){
-    localStorage.getItem(llave)
+export function consultarLocalStorage(llave){
+    return JSON.parse(localStorage.getItem(llave))
+    //return localStorage.getItem(llave)
 }

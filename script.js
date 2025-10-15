@@ -1,6 +1,6 @@
 import {expresionRegulares} from "./services/utils.js"
 
-localStorage.setItem("usuarios", JSON.stringify({nombre: "Omega", contrasena: "Contraseña"}))
+//localStorage.setItem("usuarios", JSON.stringify({nombre: "Omega", contrasena: "Contraseña"}))
 //permite entrar usuario establecido
 
 let campoForm = document.querySelectorAll(".formulario__entrada");

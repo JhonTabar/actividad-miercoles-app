@@ -1,9 +1,8 @@
-let Usuarios = [
-    {
-        nombre: "Omega",
-        telefono: "6767676767",
-        profesion: "Dev",
-    }
-]
+export let Usuarios = [{}];
 
-//seguridad usuario, ejemplo arriba
+//seguridad usuario
+    //{
+        //nombre: "Omega",
+        //telefono: "6767676767",
+       //profesion: "Dev",
+    //}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Clientes</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/views/clientes/css/clientes.css">
+</head>
+<body>
+    <nav class="navegacion">
+        <ul class="navegacion__lista">
+            <li class="navegacion__item"><a href="/index.html" class="navegacion__enlace">Registro</a></li>
+            <li class="navegacion__item"><a href="/views/clientes/js/listado-clientes.html" class="navegacion__enlace navegacion__enlace--activo">Clientes</a></li>
+            <li class="navegacion__item"><a href="/views/productos/js/listado-productos.html" class="navegacion__enlace">Productos</a></li>
+        </ul>
+    </nav>
+    <div class="clientes-listado" style="margin-top: 80px;">
+        <header class="clientes-listado__header">
+            <h1 class="clientes-listado__titulo">Gestión de Clientes</h1>
+            <button class="clientes-listado__boton-agregar">Agregar Cliente</button>
+        </header>
+
+        <main class="clientes-listado__main">
+            <table class="clientes-tabla">
+                <thead class="clientes-tabla__head">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Documento</th>
+                        <th>Teléfono</th>
+                        <th>Género</th>
+                        <th>Hobbies</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="clientes-tabla__body">
+                    <tr class="cliente-fila">
+                        <td class="cliente-fila__dato cliente-fila__dato--nombre">
+                            <div class="cliente-info">
+                                <div class="cliente-info__avatar">JZ</div>
+                                <span>Jaime</span>
+                            </div>
+                        </td>
+                        <td class="cliente-fila__dato">Zapata</td>
+                        <td class="cliente-fila__dato">12345678A</td>
+                        <td class="cliente-fila__dato">600123456</td>
+                        <td class="cliente-fila__dato">Masculino</td>
+                        <td class="cliente-fila__dato">Leer, Música</td>
+                        <td class="cliente-fila__dato cliente-fila__dato--acciones">
+                            <button class="cliente-fila__boton cliente-fila__boton--editar">Editar</button>
+                            <button class="cliente-fila__boton cliente-fila__boton--eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr class="cliente-fila">
+                        <td class="cliente-fila__dato cliente-fila__dato--nombre">
+                            <div class="cliente-info">
+                                <div class="cliente-info__avatar">LC</div>
+                                <span>Luisa</span>
+                            </div>
+                        </td>
+                        <td class="cliente-fila__dato">Cano</td>
+                        <td class="cliente-fila__dato">87654321B</td>
+                        <td class="cliente-fila__dato">600654321</td>
+                        <td class="cliente-fila__dato">Femenino</td>
+                        <td class="cliente-fila__dato">Deportes</td>
+                        <td class="cliente-fila__dato cliente-fila__dato--acciones">
+                            <button class="cliente-fila__boton cliente-fila__boton--editar">Editar</button>
+                            <button class="cliente-fila__boton cliente-fila__boton--eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script type="module" serc = "/controllers/controllerCliente.js"></script>
+</body>
+</html>
